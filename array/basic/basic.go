@@ -1,4 +1,4 @@
-// https://play.golang.org/p/x4g_ZEvD5q
+// https://play.golang.org/p/rRDXb3tGRK
 package main
 
 import (
@@ -79,4 +79,19 @@ func main() {
 	var value1 int = array16[0][1]
 	fmt.Println(array17)
 	fmt.Println(value1)
+
+	// Passing array between function
+	var array18 [1e6]int
+	foo(array18)
+	bar(&array18)
+}
+
+// Function foo accepts an array of one million integers.
+func foo(array [1e6]int) {
+
+}
+
+// Function bar accepts a pointer to an array of one million integers.
+func bar(array *[1e6]int) {
+
 }
