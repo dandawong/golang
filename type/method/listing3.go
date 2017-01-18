@@ -1,3 +1,4 @@
+// https://play.golang.org/p/ssRuTBGnn5
 // Sample program to show how a bytes.Buffer can also be used
 // with the io.Copy function.
 package main
